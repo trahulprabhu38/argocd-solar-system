@@ -6,7 +6,7 @@ metadata:
   labels:
     app: solar-system
 spec:
-  replicas: 1
+  replicas: 3
   selector: 
     matchLabels:
       app: solar-system
@@ -17,8 +17,8 @@ spec:
         app: solar-system
     spec:
       containers:
-      - image: siddharth67/solar-system:v7
+      - image: docker pull siddharth67/solar-system:1118877216
         name: solar-system 
         imagePullPolicy: Always 
         ports:
-        - containerPort: 80
+        - containerPort: 3000
