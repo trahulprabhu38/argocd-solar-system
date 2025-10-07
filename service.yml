@@ -9,9 +9,9 @@ spec:
   selector:
     app: solar-system
   ports:
-  - port: 3000
+  - port: 80
     protocol: TCP
-    targetPort: 3000
+    targetPort: 80
     nodePort: 30085
   type: NodePort
 
